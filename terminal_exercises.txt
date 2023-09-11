@@ -1,0 +1,98 @@
+Note: I used a MacBook for this exercise
+
+Terminal Exercises
+
+Part I
+
+1. make a directory called first 
+
+mkdir first
+
+2. change directory to the first folder 
+
+cd first/
+
+3. create a file called person.txt 
+
+touch person.txt
+
+4. change the name of person.txt to another.txt 
+
+mv person.txt another.txt
+
+5. make a copy of the another.txt file and call it copy.txt 
+
+cp another.txt copy.txt
+
+6. remove the copy.txt file 
+
+rm copy.txt
+
+7. make a copy of the first folder and call it second 
+
+cd ../
+cp -r first second
+
+8. delete the second folder
+
+rm -rf second
+
+
+Part II
+
+1. What does the man command do? Type in man rm. How do you scroll and get out? 
+
+Man refers to manual. 
+Man rm gives us a manual of the command rm.
+You can get out by pressing “q” on the keyboard.
+
+2. Look at the man page for ls. What does the -l flag do? What does the -a flag do? 
+
+The -l flag does the following: List files in the long format. (in order words, it shows more details about each file)
+The -a flag does the following: Include directory entries whose names begin with a dot (‘.’). (In other words it shows the hidden files)
+
+3. How do you jump between words in the terminal? 
+
+Press Option + move keys
+
+4. How do you get to the end of a line in terminal? 
+
+Control + e
+
+5. How do you move your cursor to the beginning in terminal? 
+
+Control + a
+
+6. How do you delete a word (without pressing backspace multiple times) in terminal? 
+
+Option + delete
+
+7. What is the difference between a terminal and shell? 
+
+A terminal allows you to communicate with the computer (or the shell). A shell allows you to execute commands. 
+
+8. What is an absolute path? 
+
+An absolute path is a path that starts at the root and leads to the final destination desired. (It does not matter where you currently are in the command prompt)
+
+9. What is an relative path? 
+
+A relative path is a path that leads to the destination desired relative to your current path in the command prompt.
+
+10. What is a flag? Give three examples of flags you have used. 
+
+A flag is used in combination with a beginning command to execute a more specific command. 
+
+Flag “-r” combined with cp allows you to copy an entire folder directory
+
+Flag “-rf” when combined with rm allows you to remove an entire folder directory
+
+Flag “-a” when combined with ls allows you to see hidden files that begin with a “.”
+
+11. What do the r and f flags do with the rm command?
+
+Flag “-r” combined with rm allows you to remove an entire folder directory
+
+Flag “-f” combined with rm allows you to force remove an entire folder directory without confirmation
+
+
