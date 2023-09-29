@@ -1,0 +1,51 @@
+Brian Hernandez
+
+Exercise 11.2 - Let and Const Exercise
+
+ES5 Global Constants
+
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+Solution: In order to avoid reassigning PI, you can use const instead of var.
+
+---
+
+ES2015 Global Constants
+
+/* Write an ES2015 Version */
+
+Sol: Assuming we want to reassign the variable PI, ES2015 will recommend using let.
+
+let PI = 3.14;
+PI = 42;
+
+---
+
+What is the difference between var and let?
+
+var will change the window object - it can redeclare variables that are not meant to be changed from the window object. 
+However, let will only be accessible in the code block where it was first declared.
+
+var can be redeclared but val can only be declared once (there is an error if you try to redeclare it).
+
+---
+
+What is the difference between **var** and ***const***?
+
+var will change the window object - it can redeclare variables that are not meant to be changed from the window object. 
+However, const will only be accessible in the code block where it was first declared.
+
+var can be redeclared and reassigned different values but const can only be declared once and can only be assigned to one value or reference address.
+
+---
+
+What is the difference between **let** and **const**?
+
+You can reassign values and reference addresses to let but you cannot reassign values with const. 
+
+---
+
+What is hoisting?
+
+Hoisting refers to the way the Javascript compiler works. Var variables are compiled before the rest of the page so they do not throw errors even when called before they are declared or assigned a value. But let and const are compiled in order with the rest of the page. 
